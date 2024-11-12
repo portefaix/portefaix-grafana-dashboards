@@ -8,8 +8,16 @@ You can also download them on [Grafana.com](https://grafana.com/grafana/dashboar
 
 ## Dashboards
 
-| File name | Description | Screenshot |
-| :-------- | :---------- | :--------: |
+| Dashboard                 |                      Screenshot                       | Grafana dashboard ID |
+| :------------------------ | :---------------------------------------------------: | :------------------: |
+| Node Fleet Overview       | [LINK](https://grafana.com/grafana/dashboards/22269)  |       `22269`        |
+| Node Overview             | [LINK](https://grafana.com/grafana/dashboards/22272)  |       `22272`        |
+| Node CPU and System       |                                                       |                      |
+| Node Disks and Filesystem |                                                       |                      |
+| Node Memory               |                                                       |                      |
+| Node Network              |                                                       |                      |
+| Node Logs                 |                                                       |                      |
+| SRE                       | [LINK](https://grafana.com/grafana/dashboards/22268/) |       `22268`        |
 
 ## Installation
 
@@ -32,7 +40,7 @@ grafana:
   dashboards:
     portefaix-grafana-dashboards:
       sre:
-        url: httpshttps://raw.githubusercontent.com/portefaix/portefaix-grafana-dashboards/dashboards/sre.json
+        url: httpshttps://raw.githubusercontent.com/portefaix/portefaix-grafana-dashboards/compute/dashboards/portefaix-sre.json
         token: ""
 ```
 
@@ -59,12 +67,12 @@ spec:
 apiVersion: grafana.integreatly.org/v1beta1
 kind: GrafanaDashboard
 metadata:
-  name: grafanadashboard-from-url
+  name: portefaix-sre-from-url
   labels:
     grafana.com/dashboard: main
 spec:
   instanceSelector:
     matchLabels:
       grafana.com/dashboard: main
-  url: "https://raw.githubusercontent.com/portefaix/portefaix-grafana-dashboards/dashboards/sre.json"
+  url: "https://raw.githubusercontent.com/portefaix/portefaix-grafana-dashboards/dashboards/compute/portefaix-sre.json"
 ```
