@@ -43,16 +43,16 @@ service/kubernetes
 
 ## Dashboards
 
-| Dashboard                 |                      Screenshot                       | Grafana dashboard ID |
-| :------------------------ | :---------------------------------------------------: | :------------------: |
-| Node Fleet Overview       | [LINK](https://grafana.com/grafana/dashboards/22269)  |       `22269`        |
-| Node Overview             | [LINK](https://grafana.com/grafana/dashboards/22272)  |       `22272`        |
-| Node CPU and System       |                                                       |                      |
-| Node Disks and Filesystem |                                                       |                      |
-| Node Memory               |                                                       |                      |
-| Node Network              |                                                       |                      |
-| Node Logs                 |                                                       |                      |
-| SRE                       | [LINK](https://grafana.com/grafana/dashboards/22268/) |       `22268`        |
+| Dashboard                 |                      Screenshot                       | Grafana dashboard ID | Datasource(s) |
+| :------------------------ | :---------------------------------------------------: | :------------------: | :-----------: |
+| Node Fleet Overview       | [LINK](https://grafana.com/grafana/dashboards/22269)  |       `22269`        | `Prometheus`  |
+| Node Overview             | [LINK](https://grafana.com/grafana/dashboards/22272)  |       `22272`        | `Prometheus`  |
+| Node CPU and System       |                                                       |                      | `Prometheus`  |
+| Node Disks and Filesystem |                                                       |                      | `Prometheus`  |
+| Node Memory               |                                                       |                      | `Prometheus`  |
+| Node Network              |                                                       |                      | `Prometheus`  |
+| Node Logs                 |                                                       |                      | `Prometheus`  |
+| SRE                       | [LINK](https://grafana.com/grafana/dashboards/22268/) |       `22268`        | `Prometheus`  |
 
 ## Installation
 
