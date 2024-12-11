@@ -6,6 +6,27 @@ This repository contains some [Grafana](https://github.com/grafana/grafana) dash
 
 You can also download them on [Grafana.com](https://grafana.com/grafana/dashboards/?plcmt=top-nav&cta=downloads&search=portefaix).
 
+## Dashboard Naming Convention
+
+Dashboard JSON files should follow this naming convention:
+
+```
+service-name-of-dashboard-datasource-version.json
+```
+
+**service**: The name of the service being monitored (e.g., mysql).
+**name-of-dashboard**: overview, clusterplane, ... related to the service monitored
+**datasource**: Data source, such as `otlp`, `prometheus`, `loki`, ...
+**version**: Start with `v1` for the initial version and increment with future versions (e.g., `v2`, `v3`).
+
+Example:
+
+```
+mysql-overview-otlp-v1.json
+prometheus-operator-overview-prometheus-v1.json
+kubernetes-cluster-metrics-prometheus-v1.json
+```
+
 ## Dashboards
 
 | Dashboard                 |                      Screenshot                       | Grafana dashboard ID |
