@@ -47,7 +47,7 @@ repos:
     - hack/config/LICENSE
     # - --remove-header
 - repo: https://github.com/adrienverge/yamllint.git
-  rev: v1.35.1
+  rev: v1.36.2
   hooks:
   - id: yamllint
     # exclude:
