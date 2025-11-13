@@ -53,7 +53,7 @@ repos:
     # exclude:
     #   ^gitops/(?:templates|files)/.*\.yaml
 - repo: https://github.com/crate-ci/typos
-  rev: v1.39.0
+  rev: v1.39.2
   hooks:
   - id: typos
 - repo: https://github.com/igorshubovych/markdownlint-cli
