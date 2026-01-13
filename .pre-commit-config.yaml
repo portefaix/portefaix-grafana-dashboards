@@ -37,7 +37,7 @@ repos:
     stages: [commit-msg]
     args: [] # optional: list of Conventional Commits types to allow e.g. [feat, fix, ci, chore, test]
 - repo: https://github.com/Lucas-C/pre-commit-hooks
-  rev: v1.5.5
+  rev: v1.5.6
   hooks:
   - id: insert-license
     files: (Makefile|\.mk|\.yaml|\.yml|\.sh)
